@@ -3,3 +3,4 @@
 * .bashrc
 * .bash_aliases
 * .gitconfig
+* .vimrc
