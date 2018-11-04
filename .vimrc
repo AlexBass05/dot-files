@@ -14,7 +14,7 @@ set wildmenu        " visual autocomplete for command menu
 set ruler           " show line and column number of the cursor
 set autoread        " autoreload the file in Vim if modified outside of vim
 set laststatus=2    " always show statusline
-set mouse=a         " enable mouse support (doesn't work well on Mac OS)
+" set mouse=a         " enable mouse support (doesn't work well on Mac OS)
 set nostartofline   " more intuitive movements
 set visualbell      " use visual bell instead of beeping
 set scrolloff=2     " show more lines above/below when scrolling
@@ -32,11 +32,21 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Utility
-Plugin 'scrooloose/nerdtree.git'
-Plugin 'majutsushi/tagbar'          " requires ctags installation: //github.com/universal-ctags/ctags/blob/master/docs/autotools.rst
- 
+Plugin 'scrooloose/nerdtree.git'        " file system tree
+Plugin 'majutsushi/tagbar'              " show tags of class: requires ctags installation
+Plugin 'easymotion/vim-easymotion'      " navigate easier: e.g. '\w'
+Plugin 'tpope/vim-surround'             " change surroundings: e.g. 'cs({'
+" Plugin 'kien/ctrlp.vim'               " fuzzy finder
+" Plugin 'scrooloose/syntastic'         " syntax checker
+" Plugin 'valloric/youcompleteme'       " code completiong
 
-Plugin 'humiaozuzu/tabbar'
+" Git Support
+Plugin 'tpope/vim-fugitive'             " git integration
+
+" UI
+Plugin 'sjl/badwolf'                    " colorscheme
+Plugin 'vim-airline/vim-airline'        " improved status bar
+Plugin 'vim-airline/vim-airline-themes' " themes for status bar
 
 " init (required)
 call vundle#end()
@@ -45,7 +55,8 @@ filetype plugin indent on
 
 " Colors {{{
 syntax enable       " enable syntas processing
-colorscheme badwolf " cp ~/.vim/colors/badwolf.vim
+colorscheme badwolf " set colorscheme
+set t_Co=256
 " }}}
 
 " Encoding {{{
@@ -55,6 +66,8 @@ set termencoding=utf-8
 " }}}
 
 " Spaces & Tabs {{{
+set textwidth=0     " turn off physical line wrapping
+set wrapmargin=0    " turn off physical line wrapping
 set tabstop=4       " number of spaces tab
 set softtabstop=4   " number of spaces in tab when editing
 set shiftwidth=4    " number of spaces for indentation
@@ -76,7 +89,6 @@ set smartcase       " enable case sensitivity when search contains Capitial Lett
 " }}}
 
 " Key Mappings {{{
-
 map <C-n> :NERDTreeToggle<CR>
 map <C-m> :TagbarToggle<CR>
 
@@ -86,4 +98,21 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Easymotion
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
 " }}}
+
+" Vim-Airline Configuration {{{
+let g:airline_powerline_fonts=1
+let g:airline_theme='badwolf'
+" }}}
+
+
+" New setup
+" 1. Clone dot-files: git clone git@github.com:AlexBass05/dot-files.git
+" 2. Setup Vundle
+"       a. git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+"       b. :PluginInstall
+" 3. Setup ctags: github.com/universal-ctags/ctags/blob/master/docs/autotools.rst
+" 4. Install powerline fonts: sudo apt-get install fonts-powerline (require restart)
