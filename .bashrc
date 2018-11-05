@@ -34,9 +34,14 @@ function parse_git_branch {
 # Command prompt
 PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\$(git_color)\]\$(parse_git_branch)\[\033[00m\]\$ "
 
-# Alias definitions.
+# Alias definitions
 if [ -f ~/.bash_aliases ]; then
    . ~/.bash_aliases
+fi
+
+# Extend .bashrc
+if [ -f ~/.bashrc_extended ]; then
+   . ~/.bashrc_extended
 fi
 
 # Enable programmable completion features

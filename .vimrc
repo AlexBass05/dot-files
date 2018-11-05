@@ -115,4 +115,10 @@ let g:airline_theme='badwolf'
 "       a. git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 "       b. :PluginInstall
 " 3. Setup ctags: github.com/universal-ctags/ctags/blob/master/docs/autotools.rst
+"       a. git clone https://github.com/universal-ctags/ctags.git
+"       b. cd ctags
+"       c. ./autogen.sh
+"       d. ./configure
+"       e. make
+"       f. make install
 " 4. Install powerline fonts: sudo apt-get install fonts-powerline (require restart)
