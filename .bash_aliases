@@ -44,6 +44,9 @@ alias svim='sudo vim'
 
 # git
 alias gl='git log'
+alias gle='git log --oneline --decorate'
+alias gls='git log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short'
+alias gll='git log --pretty=format:"%C(yellow)%h%Cred%d\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --numstat'
 alias gs='git status'
 alias gd='git diff'
 alias gb='git branch'
