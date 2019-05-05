@@ -49,6 +49,7 @@ alias gls='git log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\
 alias gll='git log --pretty=format:"%C(yellow)%h%Cred%d\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --numstat'
 alias gs='git status'
 alias gd='git diff'
+alias gdc='git diff --cached'
 alias gb='git branch'
-alias gf='git fetch'
+alias gf='git fetch --all --prune'
 alias gc='git checkout '
