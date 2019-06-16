@@ -1,27 +1,25 @@
 " Alexander Nehrbass
 
 " UI config {{{
-set nocompatible    " disable vi compatibilty
-set number          " show line numbers
-set hidden          " better buffer management
-set wrap            " wrap lines
-set showcmd         " show command in bottom bar
-set showmode        " show mode in bottom bar
-set cursorline      " highlight current line
-set lazyredraw      " only redraw when we need to
-set showmatch       " hightlight matching parathesis
-set wildmenu        " visual autocomplete for command menu
-set ruler           " show line and column number of the cursor
-set autoread        " autoreload the file in Vim if modified outside of vim
-set laststatus=2    " always show statusline
-" set mouse=a         " enable mouse support (doesn't work well on Mac OS)
-set nostartofline   " more intuitive movements
-set visualbell      " use visual bell instead of beeping
-set scrolloff=2     " show more lines above/below when scrolling
+set nocompatible            " disable vi compatibilty
+set number relativenumber   " show line numbers
+set hidden                  " better buffer management
+set wrap                    " wrap lines
+set showcmd                 " show command in bottom bar
+set showmode                " show mode in bottom bar
+set cursorline              " highlight current line
+set lazyredraw              " only redraw when we need to
+set showmatch               " hightlight matching parathesis
+set wildmenu                " visual autocomplete for command menu
+set ruler                   " show line and column number of the cursor
+set autoread                " autoreload the file in Vim if modified outside of vim
+set laststatus=2            " always show statusline
+set nostartofline           " more intuitive movements
+set visualbell              " use visual bell instead of beeping
+set scrolloff=2             " show more lines above/below when scrolling
 " }}}
 
 " Vundle Setup {{{
-
 " start (required)
 set nocompatible
 filetype off
@@ -36,7 +34,8 @@ Plugin 'scrooloose/nerdtree.git'        " file system tree
 Plugin 'majutsushi/tagbar'              " show tags of class: requires ctags installation
 Plugin 'easymotion/vim-easymotion'      " navigate easier: e.g. '\w'
 Plugin 'tpope/vim-surround'             " change surroundings: e.g. 'cs({'
-" Plugin 'kien/ctrlp.vim'               " fuzzy finder
+Plugin 'kien/ctrlp.vim'                 " fuzzy finder
+Plugin 'Townk/vim-autoclose'            " automatically close ([{'...
 " Plugin 'scrooloose/syntastic'         " syntax checker
 " Plugin 'valloric/youcompleteme'       " code completiong
 
@@ -109,7 +108,7 @@ let g:airline_theme='badwolf'
 " }}}
 
 
-" New setup
+" Instructions for a new setup:
 " 1. Clone dot-files: git clone git@github.com:AlexBass05/dot-files.git
 " 2. Setup Vundle
 "       a. git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
