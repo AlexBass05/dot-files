@@ -30,23 +30,24 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Utility
-Plugin 'scrooloose/nerdtree.git'        " file system tree
-Plugin 'majutsushi/tagbar'              " show tags of class: requires ctags installation
-Plugin 'easymotion/vim-easymotion'      " navigate easier: e.g. '\w'
-Plugin 'tpope/vim-surround'             " change surroundings: e.g. 'cs({'
-Plugin 'tpope/vim-commentary'           " allows to comment out things: e.g.'gcc'
-Plugin 'kien/ctrlp.vim'                 " fuzzy finder
-Plugin 'Townk/vim-autoclose'            " automatically close ([{'...
-" Plugin 'scrooloose/syntastic'         " syntax checker
-" Plugin 'valloric/youcompleteme'       " code completiong
+Plugin 'scrooloose/nerdtree.git'            " file system tree
+Plugin 'majutsushi/tagbar'                  " show tags of class: requires ctags installation
+Plugin 'easymotion/vim-easymotion'          " navigate easier: e.g. '\w'
+Plugin 'tpope/vim-surround'                 " change surroundings: e.g. 'cs({'
+Plugin 'tpope/vim-commentary'               " allows to comment out things: e.g.'gcc'
+Plugin 'kien/ctrlp.vim'                     " fuzzy finder
+Plugin 'Townk/vim-autoclose'                " automatically close ([{'...
+Plugin 'vim-scripts/ReplaceWithRegister'    " replace an existing text with the contents of a register: e.g. grw
+" Plugin 'scrooloose/syntastic'             " syntax checker
+" Plugin 'valloric/youcompleteme'           " code completiong
 
 " Git Support
-Plugin 'tpope/vim-fugitive'             " git integration
+Plugin 'tpope/vim-fugitive'                 " git integration
 
 " UI
-Plugin 'sjl/badwolf'                    " colorscheme
-Plugin 'vim-airline/vim-airline'        " improved status bar
-Plugin 'vim-airline/vim-airline-themes' " themes for status bar
+Plugin 'sjl/badwolf'                        " colorscheme
+Plugin 'vim-airline/vim-airline'            " improved status bar
+Plugin 'vim-airline/vim-airline-themes'     " themes for status bar
 
 " init (required)
 call vundle#end()
