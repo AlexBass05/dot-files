@@ -93,15 +93,20 @@ set smartcase       " enable case sensitivity when search contains Capitial Lett
 map <C-n> :NERDTreeToggle<CR>
 map <C-m> :TagbarToggle<CR>
 
+" Easymotion
+map  <leader>w <Plug>(easymotion-bd-w)
+nmap <leader>w <Plug>(easymotion-overwin-w)
+
+" --- Normal mode ---
 " Window movements
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" Easymotion
-map  <Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader>w <Plug>(easymotion-overwin-w)
+" --- Insert mode ---
+" Append ; at end of the line
+inoremap <leader>; <C-o>A;
 " }}}
 
 " Vim-Airline Configuration {{{
