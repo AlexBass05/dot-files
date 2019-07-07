@@ -2,7 +2,7 @@
 
 " UI config {{{
 let mapleader = " "          " Map <leader> to <space>
-set nocompatible            " disable vi compatibilty
+set nocompatible            " disable vi compatibility
 set number relativenumber   " show line numbers
 set hidden                  " better buffer management
 set wrap                    " wrap lines
@@ -10,7 +10,7 @@ set showcmd                 " show command in bottom bar
 set showmode                " show mode in bottom bar
 set cursorline              " highlight current line
 set lazyredraw              " only redraw when we need to
-set showmatch               " hightlight matching parathesis
+set showmatch               " highlight matching parenthesis
 set wildmenu                " visual autocomplete for command menu
 set ruler                   " show line and column number of the cursor
 set autoread                " autoreload the file in Vim if modified outside of vim
@@ -41,7 +41,7 @@ Plugin 'tpope/vim-commentary'               " allows to comment out things: e.g.
 Plugin 'Townk/vim-autoclose'                " automatically close ([{'...
 Plugin 'vim-scripts/ReplaceWithRegister'    " replace an existing text with the contents of a register: e.g. grw
 " Plugin 'scrooloose/syntastic'             " syntax checker
-" Plugin 'valloric/youcompleteme'           " code completiong
+" Plugin 'valloric/youcompleteme'           " code completion
 
 " Git Support
 Plugin 'tpope/vim-fugitive'                 " git integration
@@ -60,7 +60,7 @@ filetype plugin indent on
 " }}}
 
 " Colors {{{
-syntax enable       " enable syntas processing
+syntax enable       " enable syntax processing
 colorscheme badwolf " set colorscheme
 set t_Co=256
 " }}}
@@ -87,11 +87,19 @@ set list
 set listchars=tab:>·,trail:·,extends:>,precedes:<
 " }}}
 
-" Searcing {{{
+" Searching {{{
 set incsearch       " search as characters are entered
 set hlsearch        " highlight matches
 set ignorecase      " ignore case when searing
-set smartcase       " enable case sensitivity when search contains Capitial Letters
+set smartcase       " enable case sensitivity when search contains Capital Letters
+" }}}
+
+" Spell checking {{{
+" Set highlight color
+hi clear SpellBad
+hi SpellBad cterm=underline,bold ctermfg=red
+" Set key mapping to toggle spellchecker
+map <F6> :setlocal spell! spelllang=en_us<CR>
 " }}}
 
 " Key Mappings {{{
