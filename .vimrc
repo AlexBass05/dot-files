@@ -49,6 +49,9 @@ Plugin 'sjl/badwolf'                        " colorscheme
 Plugin 'vim-airline/vim-airline'            " improved status bar
 Plugin 'vim-airline/vim-airline-themes'     " themes for status bar
 
+" Syntax highlighting
+Plugin 'peterhoeg/vim-qml'                  " QML syntax highlighting
+
 " init (required)
 call vundle#end()
 filetype plugin indent on
