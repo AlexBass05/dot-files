@@ -36,7 +36,7 @@ Plugin 'majutsushi/tagbar'                  " show tags of class: requires ctags
 Plugin 'easymotion/vim-easymotion'          " navigate easier: e.g. '\w'
 Plugin 'tpope/vim-surround'                 " change surroundings: e.g. 'cs({'
 Plugin 'tpope/vim-commentary'               " allows to comment out things: e.g.'gcc'
-Plugin 'kien/ctrlp.vim'                     " fuzzy finder
+" Plugin 'kien/ctrlp.vim'                     " fuzzy finder
 Plugin 'Townk/vim-autoclose'                " automatically close ([{'...
 Plugin 'vim-scripts/ReplaceWithRegister'    " replace an existing text with the contents of a register: e.g. grw
 " Plugin 'scrooloose/syntastic'             " syntax checker
@@ -115,6 +115,11 @@ nnoremap <leader>O O<Esc>k
 " --- Insert mode ---
 " Append ; at end of the line
 inoremap <leader>; <C-o>A;
+
+" --- Visual mode ---
+" Copy and Paste to/from system clipboard (requires gvim: 'sudo apt install vim-gtk3')
+vnoremap <C-c> "+y
+map <C-p> "+P
 " }}}
 
 " Vim-Airline Configuration {{{
