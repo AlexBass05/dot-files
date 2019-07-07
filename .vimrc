@@ -107,6 +107,10 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" New lines without entering Insert mode
+nnoremap <leader>o o<Esc>j
+nnoremap <leader>O O<Esc>k
+
 " --- Insert mode ---
 " Append ; at end of the line
 inoremap <leader>; <C-o>A;
