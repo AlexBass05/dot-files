@@ -1,6 +1,7 @@
 " Alexander Nehrbass
 
 " UI config {{{
+let mapleader = " "          " Map <leader> to <space>
 set nocompatible            " disable vi compatibilty
 set number relativenumber   " show line numbers
 set hidden                  " better buffer management
@@ -33,7 +34,7 @@ Plugin 'gmarik/Vundle.vim'
 " Utility
 Plugin 'scrooloose/nerdtree.git'            " file system tree
 Plugin 'majutsushi/tagbar'                  " show tags of class: requires ctags installation
-Plugin 'easymotion/vim-easymotion'          " navigate easier: e.g. '\w'
+Plugin 'easymotion/vim-easymotion'          " navigate easier: e.g. '<leader>w'
 Plugin 'tpope/vim-surround'                 " change surroundings: e.g. 'cs({'
 Plugin 'tpope/vim-commentary'               " allows to comment out things: e.g.'gcc'
 " Plugin 'kien/ctrlp.vim'                     " fuzzy finder
