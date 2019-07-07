@@ -107,10 +107,17 @@ map <C-n> :NERDTreeToggle<CR>
 map <C-m> :TagbarToggle<CR>
 
 " Easymotion
-map  <leader>w <Plug>(easymotion-bd-w)
-nmap <leader>w <Plug>(easymotion-overwin-w)
+map  <leader>W <Plug>(easymotion-bd-w)
+nmap <leader>W <Plug>(easymotion-overwin-w)
 
 " --- Normal mode ---
+" Easy saving and quitting
+nnoremap <leader>w :w<cr>
+nnoremap <leader>q :q<cr>
+
+" Turn off highlight search
+nnoremap <leader>, :nohl<cr>
+
 " Window movements
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
