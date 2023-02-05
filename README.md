@@ -6,4 +6,5 @@ Setup inspired by: https://github.com/andrew8088/dotfiles
     * .bashrc
     * .bash_aliases
 * .gitconfig
-* .vimrc
+* vim
+    * .vimrc
