@@ -1,6 +1,9 @@
 # My Dot-Files
 
-* .bashrc
-* .bash_aliases
+Setup inspired by: https://github.com/andrew8088/dotfiles
+
+* bash
+    * .bashrc
+    * .bash_aliases
 * .gitconfig
 * .vimrc

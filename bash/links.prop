@@ -1,0 +1,2 @@
+$DOTFILES/bash/.bashrc=$HOME/.bashrc
+$DOTFILES/bash/.bash_aliases=$HOME/.bash_aliases
