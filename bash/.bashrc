@@ -59,3 +59,7 @@ if [ -f "/usr/share/bash-completion/completions/git" ]; then
   __git_complete gc _git_checkout
   __git_complete gp _git_pull
 fi
+
+# Setup starship prompt
+eval "$(starship init bash)"
+
