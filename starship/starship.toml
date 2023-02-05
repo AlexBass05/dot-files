@@ -14,16 +14,15 @@ $character"""
 add_newline = false
 
 [cmd_duration]
-format = "[$duration]($style)"
-style = "yellow"
+format = '[$duration]($style)'
+style = 'yellow'
 
 [character]
-success_symbol = "[❯](purple)"
-error_symbol = "[❯](red)"
+success_symbol = '[❯](purple)'
+error_symbol = '[❯](red)'
 
 [directory]
-style = "blue"
-read_only = " "
+style = 'bold #019A66'
 truncate_to_repo = true
 truncation_length = 3
 truncation_symbol = '…/'
@@ -32,32 +31,33 @@ truncation_symbol = '…/'
 symbol = " "
 
 [git_branch]
-symbol = ""
-format = "[$symbol$branch]($style) "
-style = "bright-black"
+symbol = ' '
+format = '[$symbol$branch]($style) '
+style = 'bright-black'
 
 [git_commit]
 commit_hash_length = 7
 only_detached = false
+style = 'bold #811199'
 
 [git_status]
 format = '([\[$all_status$ahead_behind\]]($style) )'
-style = "cyan"
+style = 'cyan'
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "bright-black"
+style = 'bright-black'
 
 [git_metrics]
 disabled = false
 
 [hostname]
 ssh_only = false
-format = '[@$hostname](green bold):'
+format = '[@$hostname](#4D4DAB):'
 
 [username]
-style_user = 'green bold'
-style_root = 'black bold'
+style_user = '#4D4DAB'
+style_root = 'bold red'
 format = '[$user]($style)'
 show_always = true
 
