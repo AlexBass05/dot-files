@@ -18,7 +18,7 @@ success_symbol = '[❯](purple)'
 error_symbol = '[❯](red)'
 
 [directory]
-style = '#019A66'
+style = '#1f5872'
 truncate_to_repo = true
 truncation_length = 5
 truncation_symbol = '…/'
@@ -29,23 +29,23 @@ symbol = " "
 [git_branch]
 symbol = ''
 format = '[$symbol$branch]($style) '
-style = 'bright-black'
+style = '#404a55'
 
 [git_commit]
 commit_hash_length = 7
 only_detached = false
 format = '[$hash$tag]($style) '
-style = '#811199'
+style = '#2a8bc1'
 
 [git_status]
 format = '([\[$all_status$ahead_behind\]]($style) )'
-style = 'cyan'
+style = '#a0b6d3'
 
 [git_metrics]
 disabled = false
 format = '([+$added]($added_style))([-$deleted]($deleted_style) )'
-added_style = 'green'
-deleted_style = 'red'
+added_style = '#35a770'
+deleted_style = '#bd0f2f'
 
 [hostname]
 ssh_only = true
@@ -54,7 +54,7 @@ format = '[@$hostname](#4D4DAB):'
 [time]
 disabled = false
 format = '[$time]($style)'
-style = 'yellow'
+style = '#fb9435'
 
 [username]
 style_user = '#4D4DAB'
