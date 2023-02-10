@@ -5,7 +5,6 @@ $directory\
 $fill\
 $git_metrics\
 $git_status\
-$git_state\
 $git_commit\
 $git_branch\
 $time\
@@ -35,18 +34,18 @@ style = 'bright-black'
 [git_commit]
 commit_hash_length = 7
 only_detached = false
-style = 'bold #811199'
+format = '[$hash$tag]($style) '
+style = '#811199'
 
 [git_status]
 format = '([\[$all_status$ahead_behind\]]($style) )'
 style = 'cyan'
 
-[git_state]
-format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = 'bright-black'
-
 [git_metrics]
 disabled = false
+format = '([+$added]($added_style))([-$deleted]($deleted_style) )'
+added_style = 'green'
+deleted_style = 'red'
 
 [hostname]
 ssh_only = false
@@ -54,7 +53,8 @@ format = '[@$hostname](#4D4DAB):'
 
 [time]
 disabled = false
-format = '\[[$time]($style)\]'
+format = '[$time]($style)'
+style = 'yellow'
 
 [username]
 style_user = '#4D4DAB'
