@@ -14,8 +14,8 @@ $character"""
 add_newline = true
 
 [character]
-success_symbol = '[❯](purple)'
-error_symbol = '[❯](red)'
+success_symbol = '[❯](#35a770)'
+error_symbol = '[❯](#bd0f2f)'
 
 [directory]
 style = '#1f5872'
@@ -58,7 +58,7 @@ style = '#fb9435'
 
 [username]
 style_user = '#4D4DAB'
-style_root = 'bold red'
+style_root = 'bold #bd0f2f'
 format = '[$user]($style)'
 show_always = false
 
