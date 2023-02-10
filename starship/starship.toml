@@ -8,6 +8,7 @@ $git_status\
 $git_state\
 $git_commit\
 $git_branch\
+$time\
 $line_break\
 $character"""
 
@@ -54,6 +55,10 @@ disabled = false
 [hostname]
 ssh_only = false
 format = '[@$hostname](#4D4DAB):'
+
+[time]
+disabled = false
+format = '\[[$time]($style)\]'
 
 [username]
 style_user = '#4D4DAB'
