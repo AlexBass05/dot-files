@@ -11,7 +11,7 @@ $time\
 $line_break\
 $character"""
 
-add_newline = false
+add_newline = true
 
 [character]
 success_symbol = '[❯](purple)'
