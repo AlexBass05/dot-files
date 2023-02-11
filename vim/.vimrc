@@ -47,7 +47,7 @@ Plugin 'vim-scripts/ReplaceWithRegister'    " replace an existing text with the 
 Plugin 'tpope/vim-fugitive'                 " git integration
 
 " UI
-Plugin 'sjl/badwolf'                        " colorscheme
+Plugin 'ayu-theme/ayu-vim'                  " colorscheme
 Plugin 'vim-airline/vim-airline'            " improved status bar
 Plugin 'vim-airline/vim-airline-themes'     " themes for status bar
 
@@ -60,8 +60,10 @@ filetype plugin indent on
 " }}}
 
 " Colors {{{
-syntax enable       " enable syntax processing
-colorscheme badwolf " set colorscheme
+syntax enable        " enable syntax processing
+set termguicolors    " enable true colors support
+let ayucolor="dark"  " set dark ayu colorscheme
+colorscheme ayu      " set colorscheme
 set t_Co=256
 " }}}
 
