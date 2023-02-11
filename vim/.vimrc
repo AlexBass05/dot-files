@@ -1,7 +1,7 @@
 " Alexander Nehrbass
 
 " UI config {{{
-let mapleader = " "          " Map <leader> to <space>
+let mapleader = " "         " Map <leader> to <space>
 set nocompatible            " disable vi compatibility
 set number relativenumber   " show line numbers
 set hidden                  " better buffer management
@@ -33,13 +33,13 @@ Plugin 'gmarik/Vundle.vim'
 
 " Utility
 Plugin 'scrooloose/nerdtree.git'            " file system tree
-Plugin 'majutsushi/tagbar'                  " show tags of class: requires ctags installation
-Plugin 'easymotion/vim-easymotion'          " navigate easier: e.g. '<leader>w'
-Plugin 'tpope/vim-surround'                 " change surroundings: e.g. 'cs({'
-Plugin 'tpope/vim-commentary'               " allows to comment out things: e.g.'gcc'
+"Plugin 'majutsushi/tagbar'                  " show tags of class: requires ctags installation
+"Plugin 'easymotion/vim-easymotion'          " navigate easier: e.g. '<leader>w'
+"Plugin 'tpope/vim-surround'                 " change surroundings: e.g. 'cs({'
+"Plugin 'tpope/vim-commentary'               " allows to comment out things: e.g.'gcc'
 " Plugin 'kien/ctrlp.vim'                     " fuzzy finder
-Plugin 'Townk/vim-autoclose'                " automatically close ([{'...
-Plugin 'vim-scripts/ReplaceWithRegister'    " replace an existing text with the contents of a register: e.g. grw
+"Plugin 'Townk/vim-autoclose'                " automatically close ([{'...
+"Plugin 'vim-scripts/ReplaceWithRegister'    " replace an existing text with the contents of a register: e.g. grw
 " Plugin 'scrooloose/syntastic'             " syntax checker
 " Plugin 'valloric/youcompleteme'           " code completion
 
@@ -52,7 +52,7 @@ Plugin 'vim-airline/vim-airline'            " improved status bar
 Plugin 'vim-airline/vim-airline-themes'     " themes for status bar
 
 " Syntax highlighting
-Plugin 'peterhoeg/vim-qml'                  " QML syntax highlighting
+"Plugin 'peterhoeg/vim-qml'                  " QML syntax highlighting
 
 " init (required)
 call vundle#end()
@@ -142,7 +142,7 @@ map <C-p> "+P
 
 " Vim-Airline Configuration {{{
 let g:airline_powerline_fonts=1
-let g:airline_theme='badwolf'
+let g:airline_theme='ayu'
 " }}}
 
 
