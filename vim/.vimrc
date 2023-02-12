@@ -36,7 +36,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree.git'            " file system tree
 "Plugin 'majutsushi/tagbar'                  " show tags of class: requires ctags installation
 Plugin 'easymotion/vim-easymotion'          " navigate easier: e.g. '<leader>w'
-"Plugin 'tpope/vim-surround'                 " change surroundings: e.g. 'cs({'
+Plugin 'tpope/vim-surround'                 " change surroundings: e.g. 'cs({'
 "Plugin 'tpope/vim-commentary'               " allows to comment out things: e.g.'gcc'
 " Plugin 'kien/ctrlp.vim'                     " fuzzy finder
 "Plugin 'Townk/vim-autoclose'                " automatically close ([{'...
