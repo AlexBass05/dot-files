@@ -132,7 +132,7 @@ nnoremap <leader>O O<Esc>k
 
 " --- Insert mode ---
 " Append ; at end of the line
-inoremap <leader>; <C-o>A;
+"inoremap <leader>; <C-o>A;
 
 " --- Visual mode ---
 " Copy and Paste to/from system clipboard (requires gvim: 'sudo apt install vim-gtk3')
