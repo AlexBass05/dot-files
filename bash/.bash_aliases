@@ -39,8 +39,8 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 # vim
-alias vi='vim'
-alias svim='sudo vim'
+alias vi='nvim'
+alias vim='nvim'
 
 # git
 alias gl='git log'
