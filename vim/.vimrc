@@ -19,6 +19,7 @@ set nostartofline           " more intuitive movements
 set visualbell              " use visual bell instead of beeping
 set scrolloff=2             " show more lines above/below when scrolling
 set splitbelow splitright   " open split views below are to the right
+set mouse=a                 " enable mouse support
 " }}}
 
 " Vundle Setup {{{
