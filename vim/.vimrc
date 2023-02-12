@@ -35,7 +35,7 @@ Plugin 'gmarik/Vundle.vim'
 " Utility
 Plugin 'scrooloose/nerdtree.git'            " file system tree
 "Plugin 'majutsushi/tagbar'                  " show tags of class: requires ctags installation
-"Plugin 'easymotion/vim-easymotion'          " navigate easier: e.g. '<leader>w'
+Plugin 'easymotion/vim-easymotion'          " navigate easier: e.g. '<leader>w'
 "Plugin 'tpope/vim-surround'                 " change surroundings: e.g. 'cs({'
 "Plugin 'tpope/vim-commentary'               " allows to comment out things: e.g.'gcc'
 " Plugin 'kien/ctrlp.vim'                     " fuzzy finder
@@ -110,8 +110,7 @@ map <C-n> :NERDTreeToggle<CR>
 map <C-m> :TagbarToggle<CR>
 
 " Easymotion
-map  <leader>W <Plug>(easymotion-bd-w)
-nmap <leader>W <Plug>(easymotion-overwin-w)
+map  <leader><leader>W <Plug>(easymotion-bd-w)
 
 " --- Normal mode ---
 " Easy saving and quitting
