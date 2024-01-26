@@ -33,6 +33,9 @@ if [ -f "/usr/share/bash-completion/completions/git" ]; then
   __git_complete gp _git_pull
 fi
 
+# Setup PATH
+export PATH=/home/$USER/.local/bin:$PATH
+
 # Setup starship prompt
 eval "$(starship init bash)"
 
