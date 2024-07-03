@@ -3,6 +3,7 @@ $username\
 $hostname\
 $directory\
 $fill\
+$python\
 $git_metrics\
 $git_status\
 $git_commit\
@@ -50,6 +51,10 @@ deleted_style = '#bd0f2f'
 [hostname]
 ssh_only = true
 format = '[@$hostname](#4D4DAB):'
+
+[python]
+format = '[(${symbol}$virtualenv )]($style)'
+style = 'green'
 
 [time]
 disabled = false
