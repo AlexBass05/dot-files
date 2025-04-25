@@ -39,3 +39,7 @@ export PATH=/home/$USER/.local/bin:$PATH
 # Setup starship prompt
 eval "$(starship init bash)"
 
+# Setup McFly
+export MCFLY_KEY_SCHEME=vim
+eval "$(mcfly init bash)"
+
